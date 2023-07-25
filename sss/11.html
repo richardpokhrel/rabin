@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./11.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="stylesheet" href="./javascript.js">
+
+ 
+</head>
+
+<body>
+  
+
+  
+
+  
+  <div id="dark-mode" class="content">
+    <div class="page-wrapper">
+
+      <div class="global_symbol">
+        <div class="global_embed w-embed">
+
+          <style>
+            body {
+              font-size: 0.8333333333333334vw;
+            }
+
+            /* Max Font Size */
+            @media screen and (min-width:1920px) {
+              body {
+                font-size: 16px;
+              }
+            }
+
+            /* Container Max Width */
+            .container {
+              max-width: 1920px;
+            }
+
+            /* Min Font Size */
+            @media screen and (max-width:1250px) {
+              body {
+                font-size: 10.416666666666668px;
+              }
+            }
+
+            /*Elements Min Font Size */
+            @media screen and (max-width:1400px) {
+              .body-main {
+                font-size: 12.666666666666668px;
+              }
+
+              .body-small {
+                font-size: 12.666666666666668px;
+              }
+
+              .proj_stat_desc {
+                font-size: 12.666666666666668px;
+              }
+
+              .proj_stat_num {
+                font-size: 12.666666666666668px;
+              }
+
+              li {
+                font-size: 12.666666666666668px;
+              }
+            }
+
+
+            /* Main Variables */
+            :root {
+              --main-dark: black;
+              --main-light: white;
+            }
+
+            /* Global Styles */
+            ::selection {
+              background: var(--main-dark);
+              color: var(--main-light);
+              text-shadow: none;
+            }
+
+            img::selection,
+            svg::selection {
+              background: transparent;
+            }
+
+            /* Link color inherits from parent font color  */
+            a {
+              color: inherit;
+            }
+
+            /* Disable / enable clicking on an element and its children  */
+            .no-click {
+              pointer-events: none;
+            }
+
+            .can-click {
+              pointer-events: auto;
+            }
+
+            /* Target any element with a certain "word" in the class name  */
+            [class*="spacer"] {}
+          </style>
+
+
+        </div>
+      </div>
+
+
+
+      <main class="page-main">
+
+
+        <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease"
+          role="banner" class="nav w-nav">
+          <div class="nav_layout"><a href="/" class="w-nav-brand" aria-label="home"><img src="./assets/logo.svg"
+                loading="lazy" alt="" class="nav_logo hidden">
+              <div class="nav_logo w-embed">
+                <img src="./assets/logo.svg" style="justify-items: baseline; height: fit-content;" alt="">
+              </div>
+            </a>
+            <div class="nav_links-layout">
+              <nav role="navigation" class="nav_menu w-nav-menu">
+                <div class="nav_link-wrapper hidden"><a href="https://discord.com/invite/65B4TFfmNB" target="_blank"
+                    class="w-inline-block">
+                    <div class="s2 is-black">Community</div>
+                  </a><a href="https://discord.gg/65B4TFfmNB" target="_blank"
+                    class="link-overlay hidden w-inline-block"></a></div>
+                <div class="nav_breakline mobile-left hidden"></div>
+                <div class="nav_link-wrapper menu hidden">
+                  <div class="s2 is-black">PL</div>
+                  <div class="lan_break"></div>
+                  <div class="s2 is-black">ENG</div>
+                </div>
+                <div class="nav_breakline mobile-left"></div>
+                <div class="nav_link-wrapper menu"><a data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd12a" href="#"
+                    class="menu-button w-inline-block">
+                    <div class="s2 is-black menu-button">Menu</div>
+                    <div class="menu_icon hamburger">
+                      <div class="menu-line is-first"
+                        style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                      </div>
+                      <div class="menu-line is-second" style="width: 100%;"></div>
+                      <div class="menu-line is-last"
+                        style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                      </div>
+
+
+                      
+
+
+                    </div>
+                  </a></div>
+                <div class="nav_breakline"></div>
+                <div class="nav_link-wrapper switch">
+                  <div id="togswitch" class="s2 is-black w-embed"><label for="toggleTheme" title="Toggle theme">
+                      <input id="toggleTheme" name="theme" type="checkbox">
+                      <div class="toggleTheme toggleThemeIcon">
+                        <div class="flex-container">
+                          <div id="s2switch">Lights off</div>
+                          <img src="./assets/63ede9b3f7f0e7ff68848031_lvng-menu-moon.svg" id="togsvg" alt="">
+                        </div>
+                      </div>
+                    </label>
+                    <style>
+                      input[type='checkbox'] {
+                        display: none;
+                      }
+
+                      .flex-container {
+                        display: flex;
+                        align-items: center;
+                        pointer-events: auto !important;
+                      }
+
+                      .flex-container>* {
+                        margin: 0 0 0 1em;
+                      }
+
+                      #s2switch {
+                        font-weight: 300;
+                        padding-top: 3px;
+                      }
+                    </style>
+                  </div>
+                </div>
+              </nav>
+              <div data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd136" class="hamburger-button w-nav-button"
+                style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0"
+                aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                <div class="hamburger-icon w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav_takeover"
+            style=" transform: translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; ">
+            <div class="stripes">
+              <div class="stripe-wrapper nav">
+                <div class="stripe-container nav">
+                  <div id="w-node-_4ffbc5e4-e241-0577-fd0f-b4183e7dd13c-3e7dd118" class="stripe-menu">
+                </div>
+                  <div id="w-node-_4ffbc5e4-e241-0577-fd0f-b4183e7dd17a-3e7dd118" class="stripe-menu socials">
+                    <div class="menu-item_wrapper right">
+                      <div class="padding-bottom _1-5em">
+                      <div class="menu-item_wrapper" onclick="openDropdown()"><a
+                        data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd13e" href="/" class="menu-item w-inline-block"
+                        style="transform: translate3d(10em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        <div class="number">
+                          <div class="s2">01</div>
+                        </div>
+                        <div class="div-hide">
+                          <h2 class="h-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Home</h2>
+                          <h2 class="h-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Home</h2>
+                        </div>
+                      </a><a data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd147" href="/alpha" aria-current="page"
+                        class="menu-item w-inline-block w--current"
+                        style="transform: translate3d(10em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        <div class="number">
+                          <div class="s2">02</div>
+                        </div>
+                        <div class="div-hide">
+                          <h2 class="h-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Alpha</h2>
+                          <h2 class="h-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Alpha</h2>
+                        </div>
+                      </a><a data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd150" href="#"
+                        class="menu-item disabled w-inline-block"
+                        style="transform: translate3d(10em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; ">
+                        <div class="number">
+                          <div class="s2">03</div>
+                        </div>
+                        <div class="div-hide">
+                          <h2 class="h-menu">Eta</h2>
+                          <h2 class="h-menu ab">Eta</h2>
+                        </div>
+                        <div class="coming-soon_wrapper">
+                          <div class="button-main_text">Coming soon</div>
+                        </div>
+                      </a><a data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd15c" href="#"
+                        class="menu-item disabled w-inline-block"
+                        style="transform: translate3d(10em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        <div class="number">
+                          <div class="s2">04</div>
+                        </div>
+                        <div class="div-hide">
+                          <h2 class="h-menu">Theta</h2>
+                          <h2 class="h-menu ab">Theta</h2>
+                        </div>
+                        <div class="coming-soon_wrapper">
+                          <div class="button-main_text">Coming soon</div>
+                        </div>
+                      </a><a data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd168" href="/partnership#order-now"
+                        class="menu-item w-inline-block"
+                        style="transform: translate3d(10em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; ">
+                        <div class="number">
+                          <div class="s2">05</div>
+                        </div>
+                        <div class="div-hide">
+                          <h2 class="h-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Order now</h2>
+                          <h2 class="h-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Order now</h2>
+                        </div>
+                      </a><a data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd171" href="/partnership"
+                        class="menu-item w-inline-block"
+                        style="transform: translate3d(10em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
+                        <div class="number">
+                          <div class="s2">06</div>
+                        </div>
+                        <div class="div-hide">
+                          <h2 class="h-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Partnership</h2>
+                          <h2 class="h-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Partnership</h2>
+                        </div>
+                      </a></div>
+                  </   <div class="s2">Socials</div>
+                      </div><a id="w-node-_4ffbc5e4-e241-0577-fd0f-b4183e7dd17f-3e7dd118"
+                        data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd17f" href="https://discord.gg/65B4TFfmNB"
+                        target="_blank" class="menu-item-s w-inline-block">
+                        <div class="div-hide">
+                          <h3 class="h-s-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Discord</h3>
+                          <h2 class="h-s-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Discord</h2>
+                        </div>
+                        <div class="link-icon_wrapper"><img
+                            src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/640ee5dcec61390a6f32bcbe_arrow%201.svg"
+                            loading="lazy" alt="" class="link-icon hidden"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                          <div class="link-icon w-embed"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="0.875em" fill="currentColor"
+                              viewBox="0 0 14 14">
+                              <g clip-path="url(#a)">
+                                <path d="M13.221 0H.367v.778h12.314L0 13.45l.551.55 12.67-12.66v12.282H14V0h-.779Z">
+                                </path>
+                              </g>
+                              <defs>
+                                <clipPath id="a">
+                                  <path d="M0 0h14v14H0z"></path>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </a><a id="w-node-_4ffbc5e4-e241-0577-fd0f-b4183e7dd187-3e7dd118"
+                        data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd187" href="https://medium.com/lvnghome"
+                        target="_blank" class="menu-item-s w-inline-block">
+                        <div class="div-hide">
+                          <h3 class="h-s-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Medium</h3>
+                          <h2 class="h-s-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Medium</h2>
+                        </div>
+                        <div class="link-icon_wrapper"><img
+                            src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/640ee5dcec61390a6f32bcbe_arrow%201.svg"
+                            loading="lazy" alt="" class="link-icon hidden"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                          <div class="link-icon w-embed"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="0.875em" fill="currentColor"
+                              viewBox="0 0 14 14">
+                              <g clip-path="url(#a)">
+                                <path d="M13.221 0H.367v.778h12.314L0 13.45l.551.55 12.67-12.66v12.282H14V0h-.779Z">
+                                </path>
+                              </g>
+                              <defs>
+                                <clipPath id="a">
+                                  <path d="M0 0h14v14H0z"></path>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </a><a id="w-node-_4ffbc5e4-e241-0577-fd0f-b4183e7dd18f-3e7dd118"
+                        data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd18f" href="https://linkedin.com/company/lvng-io"
+                        target="_blank" class="menu-item-s w-inline-block">
+                        <div class="div-hide">
+                          <h3 class="h-s-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            LinkedIn</h3>
+                          <h2 class="h-s-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            LinkedIn</h2>
+                        </div>
+                        <div class="link-icon_wrapper"><img
+                            src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/640ee5dcec61390a6f32bcbe_arrow%201.svg"
+                            loading="lazy" alt="" class="link-icon hidden"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                          <div class="link-icon w-embed"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="0.875em" fill="currentColor"
+                              viewBox="0 0 14 14">
+                              <g clip-path="url(#a)">
+                                <path d="M13.221 0H.367v.778h12.314L0 13.45l.551.55 12.67-12.66v12.282H14V0h-.779Z">
+                                </path>
+                              </g>
+                              <defs>
+                                <clipPath id="a">
+                                  <path d="M0 0h14v14H0z"></path>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </a><a id="w-node-_4ffbc5e4-e241-0577-fd0f-b4183e7dd197-3e7dd118"
+                        data-w-id="4ffbc5e4-e241-0577-fd0f-b4183e7dd197" href="https://t.me/lvnghome" target="_blank"
+                        class="menu-item-s w-inline-block">
+                        <div class="div-hide">
+                          <h3 class="h-s-menu"
+                            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Telegram</h3>
+                          <h2 class="h-s-menu ab"
+                            style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            Telegram</h2>
+                        </div>
+                        <div class="link-icon_wrapper"><img
+                            src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/640ee5dcec61390a6f32bcbe_arrow%201.svg"
+                            loading="lazy" alt="" class="link-icon hidden"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                          <div class="link-icon w-embed"
+                            style="transform: translate3d(0%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="0.875em" fill="currentColor"
+                              viewBox="0 0 14 14">
+                              <g clip-path="url(#a)">
+                                <path d="M13.221 0H.367v.778h12.314L0 13.45l.551.55 12.67-12.66v12.282H14V0h-.779Z">
+                                </path>
+                              </g>
+                              <defs>
+                                <clippath id="a">
+                                  <path d="M0 0h14v14H0z"></path>
+                                </clippath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+        </div>
+        
+
+        <div class="stripes">
+          <div class="stripe-wrapper">
+            <div class="stripe-container">
+              <div id="w-node-_9609066b-2f16-b553-4a9a-29540ac8feb1-4c451fe2" class="stripe"></div>
+              <div id="w-node-_9609066b-2f16-b553-4a9a-29540ac8feb2-4c451fe2" class="stripe mob-r"></div>
+              <div id="w-node-_9609066b-2f16-b553-4a9a-29540ac8feb3-4c451fe2" class="two-stripes">
+                <div class="stripe mob-r"></div>
+                <div class="stripe right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alpha-hero_img">
+          <div class="alpha-img_bg">
+
+          </div>
+          <div class="container">
+            <div class="page-padding">
+              <div class="stripe-container alpha-img">
+                <div id="w-node-_9609066b-2f16-b553-4a9a-29540ac8fed4-4c451fe2" class="alpha_hero-img_cover"></div>
+                <h1 id="w-node-_7f31e31b-3536-186f-d95e-beca2dcc2a4b-4c451fe2"
+                  class="text-size-h1 is-fff is-alpha-title">Alpha</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alpha-main_section">
+          <div class="container">
+            <div class="page-padding">
+              <div class="stripe-container interior">
+                <div id="w-node-b128e7b5-8ab8-7728-d5a5-ba38f63c487d-4c451fe2" class="alpha-main_layout-left">
+                  <div class="alpha-main_wrapper">
+                    <div class="s2">Product Variants</div>
+                  </div><a data-w-id="d5b9a807-6151-57cf-3ced-151d824816d7" href="#"
+                    class="whyus-tab top w-inline-block">
+                    <div
+                      style="transform: translate3d(0em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                      class="tab-label">Alpha IV</div><img data-w-id="0664ef0a-6f49-60ad-64fe-1ac27e91e937" alt=""
+                      src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63ee09f320b9c8f33117dc3a_arrow-right.svg"
+                      loading="lazy" class="whyus-tabs_img alpha4"
+                      style="transform: translate3d(1.25em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+                  </a><a data-w-id="c2448584-17db-8eb1-a2f4-3608164668eb" href="#" class="whyus-tab w-inline-block">
+                    <div
+                      style="transform: translate3d(0em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                      class="tab-label">Alpha VI</div><img
+                      style="opacity: 0; transform: translate3d(1.25em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                      data-w-id="c2448584-17db-8eb1-a2f4-3608164668ee"
+                      src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63ee09f320b9c8f33117dc3a_arrow-right.svg"
+                      loading="lazy" alt="" class="whyus-tabs_img alpha4">
+                  </a>
+                </div>
+                <div id="w-node-_98c967d8-fe92-8269-1cfd-e72d4462b11f-4c451fe2" style="display:block"
+                  class="alpha-main_layout-right1">
+                  <div class="margin-bottom _3em">
+                    <h2 class="text-size-h2">Alpha IV</h2>
+                  </div>
+                  <div data-current="Interior" data-easing="ease" data-duration-in="0" data-duration-out="0"
+                    class="w-tabs">
+                    <div class="tabsmenu-alpha w-tab-menu" role="tablist"><a data-w-tab="Interior" id="ta1"
+                        data-w-id="1555338f-2935-0864-5d03-c9c4f779adb8"
+                        class="alpha-tabs w-inline-block w-tab-link w--current" href="#w-tabs-0-data-w-pane-0"
+                        role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
+
+                        <div class="alpha-tabs-dark-wrapper">
+                          <div>Interior</div>
+                          <div id="act1" style="background-color: rgb(255, 255, 255);" class="underline activedark">
+                          </div>
+                          <div style="width: 0%; height: 1px;" class="underline black"></div>
+                        </div>
+                      </a><a data-w-tab="Exterior" id="ta2" data-w-id="1555338f-2935-0864-5d03-c9c4f779adbb"
+                        class="alpha-tabs right w-inline-block w-tab-link" tabindex="-1" href="#w-tabs-0-data-w-pane-1"
+                        role="tab" aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+                        <div class="alpha-tabs-light-wrapper">
+                          <div>Exterior</div>
+                          <div id="act2" style="background-color: rgba(201, 201, 201, 0.5);" class="underline active">
+                          </div>
+                          <div style="width: 0%; height: 0.989583px;" class="underline black"></div>
+                        </div>
+                        <!-- <div class="alpha-tabs-dark-wrapper">
+                          <div>Exterior</div>
+                          <div id="act2" style="background-color: rgba(201, 201, 201, 0.5);"
+                            class="underline activedark"></div>
+                          <div style="width: 0%; height: 1px;" class="underline black"></div>
+                        </div> -->
+                      </a></div>
+                    <div class="w-tab-content">
+                      <div data-w-tab="Interior" class="w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0"
+                        role="tabpanel" aria-labelledby="ta1">
+                        <div class="margin-top _1-5em">
+                          <div class="margin-bottom _3em">
+                            <div class="adjust_alpha-tab-text_width">
+                              <div class="body-main">Alpha is an innovative and ecological housing project that offers
+                                energy-efficient solutions for everyone regardless of age, gender, or background. Alpha
+                                IV is designed for a family up to four people.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stats-grid">
+                          <div id="w-node-_1d8b5b35-fe90-a130-3731-7a18d5ff4e50-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_3b40a123-c244-8340-3f24-41d928b3f8bf-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Ground floor</div>
+                            </div>
+                            <div id="w-node-_9a1684e2-5a12-759c-b81b-1ee526b59f87-4c451fe2" class="body-small reg">53,9
+                              m<sup>2</sup></div>
+                          </div>
+                          <div id="w-node-ad941693-add9-ea18-94f1-284f837734aa-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-ad941693-add9-ea18-94f1-284f837734ab-4c451fe2" class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Building area</div>
+                            </div>
+                            <div id="w-node-ad941693-add9-ea18-94f1-284f837734ae-4c451fe2" class="body-small reg">70
+                              m<sup>2</sup></div>
+                          </div>
+                          <div id="w-node-aba9ee92-35ff-43e8-d211-45bcfa74ec7e-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-aba9ee92-35ff-43e8-d211-45bcfa74ec7f-4c451fe2" class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Bathrooms</div>
+                            </div>
+                            <div id="w-node-aba9ee92-35ff-43e8-d211-45bcfa74ec82-4c451fe2" class="body-small reg">2
+                            </div>
+                          </div>
+                          <div id="w-node-_4ed6570f-0ae6-f7d3-2182-4a65d009bd11-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_4ed6570f-0ae6-f7d3-2182-4a65d009bd12-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Floor</div>
+                            </div>
+                            <div id="w-node-_4ed6570f-0ae6-f7d3-2182-4a65d009bd15-4c451fe2" class="body-small reg">33,9
+                              m<sup>2</sup></div>
+                          </div>
+                          <div id="w-node-c7d4fb97-4fa8-85c6-5170-e6f192ba3801-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-c7d4fb97-4fa8-85c6-5170-e6f192ba3802-4c451fe2" class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Rooms (without living room)</div>
+                            </div>
+                            <div id="w-node-c7d4fb97-4fa8-85c6-5170-e6f192ba3805-4c451fe2" class="body-small reg">3
+                            </div>
+                          </div>
+                          <div id="w-node-_8f588cc0-52e7-37ca-0ce3-388b08c81de8-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_8f588cc0-52e7-37ca-0ce3-388b08c81de9-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Components</div>
+                            </div>
+                            <div id="w-node-_8f588cc0-52e7-37ca-0ce3-388b08c81dec-4c451fe2" class="body-small reg">10
+                              000+</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-w-tab="Exterior" class="w-tab-pane" id="w-tabs-0-data-w-pane-1" role="tabpanel"
+                        aria-labelledby="ta2">
+                        <div class="margin-top _1-5em">
+                          <div class="margin-bottom _3em">
+                            <div class="adjust_alpha-tab-text_width _80">
+                              <div class="body-main">We have designed a dream building in which the facade not only
+                                breathes and thermally insulates or recovers energy, but also has a unique aesthetic.
+                                This is thanks to our team of architects, who gained experience in prestigious projects
+                                in the country and around the world. Their approach to beauty, sense of aesthetics, and
+                                engineering skills have allowed them to build beautiful and easily accessible homes.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mask-photo"></div>
+                  <div class="hero-cover">
+                    <div id="w-node-f46b7c8a-75ff-17d1-847a-1e46094ebf1a-4c451fe2" class="hero-img_cover"></div>
+                  </div>
+                </div>
+                <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e398-4c451fe2" style="display:none"
+                  class="alpha-main_layout-right2">
+                  <div class="margin-bottom _3em">
+                    <h2 class="text-size-h2">Alpha VI</h2>
+                  </div>
+                  <div data-current="Interior" data-easing="ease" data-duration-in="0" data-duration-out="0"
+                    class="w-tabs">
+                    <div class="tabsmenu-alpha w-tab-menu" role="tablist"><a data-w-tab="Interior"
+                        data-w-id="65a68e6a-7a80-d6db-bdaf-c74ac3d6e39e"
+                        class="alpha-tabs w-inline-block w-tab-link w--current" id="w-tabs-1-data-w-tab-0"
+                        href="#w-tabs-1-data-w-pane-0" role="tab" aria-controls="w-tabs-1-data-w-pane-0"
+                        aria-selected="true">
+                        <div class="alpha-tabs-light-wrapper">
+                          <div>Interior</div>
+                          <div style="background-color: rgb(30, 30, 28);" class="underline active"></div>
+                          <div style="width: 0%;" class="underline black"></div>
+                        </div>
+                        <div class="alpha-tabs-dark-wrapper">
+                          <div>Interior</div>
+                          <div style="background-color: rgb(255, 255, 255);" class="underline activedark"></div>
+                          <div style="width: 0%;" class="underline black"></div>
+                        </div>
+                      </a><a data-w-tab="Exterior" data-w-id="65a68e6a-7a80-d6db-bdaf-c74ac3d6e3a3"
+                        class="alpha-tabs right w-inline-block w-tab-link" tabindex="-1" id="w-tabs-1-data-w-tab-1"
+                        href="#w-tabs-1-data-w-pane-1" role="tab" aria-controls="w-tabs-1-data-w-pane-1"
+                        aria-selected="false">
+                        <div class="alpha-tabs-light-wrapper">
+                          <div>Exterior</div>
+                          <div style="background-color: rgba(201, 201, 201, 0.5);" class="underline active"></div>
+                          <div style="width: 0%;" class="underline black"></div>
+                        </div>
+                        <div class="alpha-tabs-dark-wrapper">
+                          <div>Exterior</div>
+                          <div style="background-color: rgba(201, 201, 201, 0.5);" class="underline activedark"></div>
+                          <div style="width: 0%;" class="underline black"></div>
+                        </div>
+                      </a></div>
+                    <div class="w-tab-content">
+                      <div data-w-tab="Interior" class="w-tab-pane w--tab-active" id="w-tabs-1-data-w-pane-0"
+                        role="tabpanel" aria-labelledby="w-tabs-1-data-w-tab-0">
+                        <div class="margin-top _1-5em">
+                          <div class="margin-bottom _3em">
+                            <div class="adjust_alpha-tab-text_width">
+                              <div class="body-main">Alpha is an innovative and ecological housing project that offers
+                                energy-efficient solutions for everyone regardless of age, gender, or background. Alpha
+                                VI is designed for a family up to six people.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="stats-grid">
+                          <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b0-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b1-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Ground floor</div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b4-4c451fe2" class="body-small reg">53,2
+                              m<sup>2</sup></div>
+                          </div>
+                          <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b8-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b9-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Building area</div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3bc-4c451fe2" class="body-small reg">70
+                              m<sup>2</sup></div>
+                          </div>
+                          <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c0-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c1-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Bathrooms</div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c4-4c451fe2" class="body-small reg">2
+                            </div>
+                          </div>
+                          <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c6-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c7-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Floor</div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3ca-4c451fe2" class="body-small reg">33,8
+                              m<sup>2</sup></div>
+                          </div>
+                          <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3ce-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3cf-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Rooms (without living room)</div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d2-4c451fe2" class="body-small reg">4
+                            </div>
+                          </div>
+                          <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d4-4c451fe2" class="stats-grid_wrapper">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d5-4c451fe2"
+                              class="margin-bottom _025em">
+                              <div class="body-small is-0b0f19">Components</div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d8-4c451fe2" class="body-small reg">33
+                              513+</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-w-tab="Exterior" class="w-tab-pane" id="w-tabs-1-data-w-pane-1" role="tabpanel"
+                        aria-labelledby="w-tabs-1-data-w-tab-1">
+                        <div class="margin-top _1-5em">
+                          <div class="margin-bottom _3em">
+                            <div class="adjust_alpha-tab-text_width _80">
+                              <div class="body-main">We have designed a dream building in which the facade not only
+                                breathes and thermally insulates or recovers energy, but also has a unique aesthetic.
+                                This is thanks to our team of architects, who gained experience in prestigious projects
+                                in the country and around the world. Their approach to beauty, sense of aesthetics, and
+                                engineering skills have allowed them to build beautiful and easily accessible homes.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mask-photo"></div>
+
+                  <div class="hero-cover">
+                    <div id="w-node-f46b7c8a-75ff-17d1-847a-1e46094ebf1a-4c451fe2" class="hero-img_cover"></div>
+                  </div>
+
+                  <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e398-4c451fe2" style="display:none"
+                    class="alpha-main_layout-right2">
+                    <div class="margin-bottom _3em">
+                      <h2 class="text-size-h2">Alpha VI</h2>
+                    </div>
+                    <div data-current="Interior" data-easing="ease" data-duration-in="0" data-duration-out="0"
+                      class="w-tabs">
+                      <div class="tabsmenu-alpha w-tab-menu" role="tablist"><a data-w-tab="Interior"
+                          data-w-id="65a68e6a-7a80-d6db-bdaf-c74ac3d6e39e"
+                          class="alpha-tabs w-inline-block w-tab-link w--current" id="w-tabs-1-data-w-tab-0"
+                          href="#w-tabs-1-data-w-pane-0" role="tab" aria-controls="w-tabs-1-data-w-pane-0"
+                          aria-selected="true">
+                          <div class="alpha-tabs-light-wrapper">
+                            <div>Interior</div>
+                            <div style="background-color: rgb(30, 30, 28);" class="underline active"></div>
+                            <div style="width: 0%;" class="underline black"></div>
+                          </div>
+                          <div class="alpha-tabs-dark-wrapper">
+                            <div>Interior</div>
+                            <div style="background-color: rgb(255, 255, 255);" class="underline activedark"></div>
+                            <div style="width: 0%;" class="underline black"></div>
+                          </div>
+                        </a><a data-w-tab="Exterior" data-w-id="65a68e6a-7a80-d6db-bdaf-c74ac3d6e3a3"
+                          class="alpha-tabs right w-inline-block w-tab-link" tabindex="-1" id="w-tabs-1-data-w-tab-1"
+                          href="#w-tabs-1-data-w-pane-1" role="tab" aria-controls="w-tabs-1-data-w-pane-1"
+                          aria-selected="false">
+                          <div class="alpha-tabs-light-wrapper">
+                            <div>Exterior</div>
+                            <div style="background-color: rgba(201, 201, 201, 0.5);" class="underline active"></div>
+                            <div style="width: 0%;" class="underline black"></div>
+                          </div>
+                          <div class="alpha-tabs-dark-wrapper">
+                            <div>Exterior</div>
+                            <div style="background-color: rgba(201, 201, 201, 0.5);" class="underline activedark"></div>
+                            <div style="width: 0%;" class="underline black"></div>
+                          </div>
+                        </a></div>
+                      <div class="w-tab-content">
+                        <div data-w-tab="Interior" class="w-tab-pane w--tab-active" id="w-tabs-1-data-w-pane-0"
+                          role="tabpanel" aria-labelledby="w-tabs-1-data-w-tab-0">
+                          <div class="margin-top _1-5em">
+                            <div class="margin-bottom _3em">
+                              <div class="adjust_alpha-tab-text_width">
+                                <div class="body-main">Alpha is an innovative and ecological housing project that offers
+                                  energy-efficient solutions for everyone regardless of age, gender, or background.
+                                  Alpha VI is designed for a family up to six people.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="stats-grid">
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b0-4c451fe2" class="stats-grid_wrapper">
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b1-4c451fe2"
+                                class="margin-bottom _025em">
+                                <div class="body-small is-0b0f19">Ground floor</div>
+                              </div>
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b4-4c451fe2" class="body-small reg">
+                                53,2 m<sup>2</sup></div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b8-4c451fe2" class="stats-grid_wrapper">
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3b9-4c451fe2"
+                                class="margin-bottom _025em">
+                                <div class="body-small is-0b0f19">Building area</div>
+                              </div>
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3bc-4c451fe2" class="body-small reg">70
+                                m<sup>2</sup></div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c0-4c451fe2" class="stats-grid_wrapper">
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c1-4c451fe2"
+                                class="margin-bottom _025em">
+                                <div class="body-small is-0b0f19">Bathrooms</div>
+                              </div>
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c4-4c451fe2" class="body-small reg">2
+                              </div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c6-4c451fe2" class="stats-grid_wrapper">
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3c7-4c451fe2"
+                                class="margin-bottom _025em">
+                                <div class="body-small is-0b0f19">Floor</div>
+                              </div>
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3ca-4c451fe2" class="body-small reg">
+                                33,8 m<sup>2</sup></div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3ce-4c451fe2" class="stats-grid_wrapper">
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3cf-4c451fe2"
+                                class="margin-bottom _025em">
+                                <div class="body-small is-0b0f19">Rooms (without living room)</div>
+                              </div>
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d2-4c451fe2" class="body-small reg">4
+                              </div>
+                            </div>
+                            <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d4-4c451fe2" class="stats-grid_wrapper">
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d5-4c451fe2"
+                                class="margin-bottom _025em">
+                                <div class="body-small is-0b0f19">Components</div>
+                              </div>
+                              <div id="w-node-_65a68e6a-7a80-d6db-bdaf-c74ac3d6e3d8-4c451fe2" class="body-small reg">33
+                                513+</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-w-tab="Exterior" class="w-tab-pane" id="w-tabs-1-data-w-pane-1" role="tabpanel"
+                          aria-labelledby="w-tabs-1-data-w-tab-1">
+                          <div class="margin-top _1-5em">
+                            <div class="margin-bottom _3em">
+                              <div class="adjust_alpha-tab-text_width _80">
+                                <div class="body-main">We have designed a dream building in which the facade not only
+                                  breathes and thermally insulates or recovers energy, but also has a unique aesthetic.
+                                  This is thanks to our team of architects, who gained experience in prestigious
+                                  projects in the country and around the world. Their approach to beauty, sense of
+                                  aesthetics, and engineering skills have allowed them to build beautiful and easily
+                                  accessible homes.</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mask-photo"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alpha-main_img1" style="display: none;">
+          <div class="container">
+            <div class="page-padding">
+              <div class="stripe-container">
+                <div id="w-node-b5cadeaa-5c49-afb2-a6d2-3e10aa41958f-4c451fe2" class="alpha-main_photo"></div>
+                <div id="w-node-_69a9d1f2-89d7-6b66-74a9-fa71cebe3dd9-4c451fe2" class="alpha-main_photo-right"></div>
+                <div id="w-node-_2b0fef9b-bc57-fef8-d5bf-900b25f15599-4c451fe2" class="alpha-main_photo-left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="alpha-main_img2" style="display: block;">
+          <div class="container">
+            <div class="page-padding">
+              <div class="stripe-container">
+                <div id="w-node-b7a1eced-cf27-eabd-7dfa-b45a70f8b32d-4c451fe2" class="alpha-main_photo exterior"></div>
+                <div id="w-node-_5cddb524-eee7-b42c-68db-2158cfcffc4b-4c451fe2" class="alpha-main_photo-right"></div>
+                <div id="w-node-_5cddb524-eee7-b42c-68db-2158cfcffc4c-4c451fe2" class="alpha-main_photo-left"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div style="display:flex" class="alpha-floorplans_4">
+          <div class="container">
+            <div class="page-padding">
+              <div class="stripe-container">
+                <div id="w-node-c695791c-88c1-b1c3-3cfd-99d2d15b2cf5-4c451fe2" class="alpha-floorplans_heading-wrapper">
+                  <div class="mask-photo-2"></div>
+                  <h3 class="text-size-h3">Floor plans - Alpha IV</h3>
+                  <div class="mask-photo-3">
+
+                    <div>
+
+                      <img src="./assets/alpha/63fc7303a7619aabd332bf87_alpha-floorplan-4.png"
+                        style="padding-top: 10%;">
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+                <div id="w-node-b1433830-f07f-c1f6-7924-cae81474acbf-4c451fe2" class="alpha-floor-one-4"
+                  style="display: inline-block;"></div>
+                <div id="w-node-f2118ac1-6e4f-17ee-6379-c14465a9188d-4c451fe2" class="alpha-floor-two-4"
+                  style="display: none;"></div>
+                <div id="w-node-_1a090bae-cdda-3a14-74ce-b4de549bd0fd-4c451fe2" class="alpha-axonometry-4"
+                  style="display: none;"></div>
+                <div id="w-node-f9ca0721-15e7-1eaf-e94e-2b40125994e5-4c451fe2" class="floorplans_stats">
+                  <div class="floorplans_upper-wrapper">
+                    <div class="margin-bottom _1-5em">
+                      <h3 class="text-size-h5">Levels</h3>
+                    </div>
+                    <div data-current="Ground Floor" data-easing="ease" data-duration-in="0" data-duration-out="0"
+                      class="w-tabs">
+                      <div class="tab-floors w-tab-menu" role="tablist"><a data-w-tab="Ground Floor"
+                          data-w-id="d5356176-b563-1536-fff5-d1b6d43ca9c9"
+                          class="alpha-tabs w-inline-block w-tab-link w--current" id="w-tabs-2-data-w-tab-0"
+                          href="#w-tabs-2-data-w-pane-0" role="tab" aria-controls="w-tabs-2-data-w-pane-0"
+                          aria-selected="true">
+                          <div class="alpha-tabs-light-wrapper">
+                            <div>Ground floor</div>
+                            <div style="background-color: rgb(30, 30, 28);" class="underline active"></div>
+                            <div style="width: 0%; height: 0.996094px;" class="underline black"></div>
+                          </div>
+                          <!-- <div class="alpha-tabs-dark-wrapper">
+                            <div>Ground floor</div>
+                            <div style="background-color: rgb(255, 255, 255);" class="underline activedark"></div>
+                            <div style="width: 0%; height: 1px;" class="underline black"></div>
+                          </div> -->
+                        </a><a data-w-tab="1st Floor" data-w-id="22a2cbe2-2a70-633c-de2b-79afde6cc84c"
+                          class="alpha-tabs w-inline-block w-tab-link" tabindex="-1" id="w-tabs-2-data-w-tab-1"
+                          href="#w-tabs-2-data-w-pane-1" role="tab" aria-controls="w-tabs-2-data-w-pane-1"
+                          aria-selected="false">
+                          <!-- <div class="alpha-tabs-light-wrapper">
+                            <div>1st floor</div>
+                            <div style="background-color: rgba(201, 201, 201, 0.5);" class="underline active"></div>
+                            <div style="width: 0%;" class="underline black"></div>
+                          </div> -->
+                          <div class="alpha-tabs-dark-wrapper">
+                            <div>1st floor</div>
+                            <div class="underline activedark"></div>
+                            <div style="width: 0%;" class="underline black"></div>
+                          </div>
+                        </a><a data-w-tab="Axonometry" data-w-id="948b7236-8639-c130-e6a4-bfc948c2755f"
+                          class="alpha-tabs w-inline-block w-tab-link" tabindex="-1" id="w-tabs-2-data-w-tab-2"
+                          href="#w-tabs-2-data-w-pane-2" role="tab" aria-controls="w-tabs-2-data-w-pane-2"
+                          aria-selected="false">
+                          <!-- <div class="alpha-tabs-light-wrapper">
+                            <div>axonometry</div>
+                            <div style="background-color: rgba(201, 201, 201, 0.5);" class="underline active"></div>
+                            <div style="width: 0%; height: 0.996094px;" class="underline black"></div>
+                          </div> -->
+                          <div class="alpha-tabs-dark-wrapper">
+                            <div>axonometry</div>
+                            <div class="underline activedark"></div>
+                            <div style="width: 0%; height: 1px;" class="underline black"></div>
+                          </div>
+                        </a></div>
+                      <div class="w-tab-content">
+                        <div data-w-tab="Ground Floor" class="floorplans_pane w-tab-pane w--tab-active"
+                          id="w-tabs-2-data-w-pane-0" role="tabpanel" aria-labelledby="w-tabs-2-data-w-tab-0">
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">1</div>
+                              </div>
+                              <div class="body-small">Living room</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">10,5 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">2</div>
+                              </div>
+                              <div class="body-small">Bathroom</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">5,6 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">3</div>
+                              </div>
+                              <div class="body-small">Technical room</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">2,7 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">4</div>
+                              </div>
+                              <div class="body-small">Vestibule</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">4,3 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">5</div>
+                              </div>
+                              <div class="body-small">Dining Room</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">18,4 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">6</div>
+                              </div>
+                              <div class="body-small">Kitchenette</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">6,2 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">7</div>
+                              </div>
+                              <div class="body-small">Lobby/Hall</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">5,6 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="underline-floor"></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">=</div>
+                              </div>
+                              <div class="body-small">Sum</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">53,3 m<sup>2</sup></div>
+                          </div>
+                        </div>
+                        <div data-w-tab="1st Floor" class="floorplans_pane w-tab-pane" id="w-tabs-2-data-w-pane-1"
+                          role="tabpanel" aria-labelledby="w-tabs-2-data-w-tab-1">
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">1</div>
+                              </div>
+                              <div class="body-small">Master Bedroom</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">9,8 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">2</div>
+                              </div>
+                              <div class="body-small">Bedroom</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">9,0 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">3</div>
+                              </div>
+                              <div class="body-small">Bathroom</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">4,5 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">4</div>
+                              </div>
+                              <div class="body-small">Office</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">4,9 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">5</div>
+                              </div>
+                              <div class="body-small">Lobby/Hall</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">4,8 m<sup>2</sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="underline-floor"></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">=</div>
+                              </div>
+                              <div class="body-small">Sum</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">33,0 m<sup>2</sup></div>
+                          </div>
+                        </div>
+                        <div data-w-tab="Axonometry" class="floorplans_pane w-tab-pane" id="w-tabs-2-data-w-pane-2"
+                          role="tabpanel" aria-labelledby="w-tabs-2-data-w-tab-2">
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">1</div>
+                              </div>
+                              <div class="body-small">Living room height</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">6,8 m<sup></sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">2</div>
+                              </div>
+                              <div class="body-small">Ground floor</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">2,7 m<sup></sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">3</div>
+                              </div>
+                              <div class="body-small">First floor height max</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">3,8 m<sup></sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">4</div>
+                              </div>
+                              <div class="body-small">Building width</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">7 m<sup></sup></div>
+                          </div>
+                          <div class="floorplans_wrapper">
+                            <div class="floorplans_texts">
+                              <div class="floorplans_equal-width">
+                                <div class="body-small reg is-0b0f19">5</div>
+                              </div>
+                              <div class="body-small">Building lenght</div>
+                            </div>
+                            <div class="body-small reg is-0b0f19">10 m<sup></sup></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="margin-top _6em"><a data-w-id="f08dc153-e735-3c20-98c6-91a7fabeaaf6"
+                        href="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/643d284b258bc4416ecf0a0e_Alpha4_do%20pobrania-compressed.pdf"
+                        target="_blank" class="button-main w-inline-block">
+                        <div>Download drAwings</div>
+                        <div class="underline"></div>
+                        <div class="underline black" style="width: 0%;"></div>
+                      </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container footer">
+            <div class="page-padding">
+              <div class="stripe-container footer">
+                <div id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad77-ed02ad73" class="footer_info">
+                  <div class="footer_info-wrapper">
+                    <div class="footer_logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" height="2.75em"
+                        fill="currentColor" viewBox="0 0 110 44">
+                        <path
+                          d="M44 17.895h2.805v12.6h7.035v2.506H44V17.895Zm28.544 0 4.423 6.99 2.632 4.402.022-11.392h2.698v15.103h-3.13l-4.337-6.646-2.806-4.618.065 11.264h-2.718l-.022-15.103h3.173Zm15.432 14.414c-1.108-.648-1.975-1.561-2.6-2.741-.625-1.18-.939-2.546-.939-4.1 0-1.553.299-2.937.896-4.11a6.371 6.371 0 0 1 2.59-2.718c1.128-.64 2.462-.96 4.002-.96 1.87 0 3.42.489 4.65 1.467 1.23.978 2.04 2.323 2.428 4.034h-2.891c-.273-.92-.774-1.658-1.5-2.211-.726-.554-1.6-.83-2.621-.83-1.481 0-2.626.482-3.43 1.444-.807.964-1.21 2.26-1.21 3.885s.417 2.926 1.252 3.905c.835.979 1.97 1.467 3.41 1.467.977 0 1.779-.18 2.405-.54.626-.358 1.08-.816 1.36-1.37a3.75 3.75 0 0 0 .42-1.715h-5.717v-2.309h8.393V33h-2.179v-2.956l-.022-.453c-.273.878-.776 1.712-1.51 2.502-.734.791-1.87 1.187-3.41 1.187-1.409 0-2.667-.323-3.775-.97h-.002ZM67.738 17.898l-5.629 15.105h-3.344l-5.628-15.105h2.876l3.04 8.487c.323.917.575 1.87.682 2.823.054.54.072 1.025.054 1.457h1.294c-.017-.432 0-.917.054-1.457.108-.953.36-1.906.683-2.823l3.038-8.487h2.88Zm-55.79-.191V33h-.475V22.123L11 22.009V18.37l.948-.664ZM33 19.015V33h-1.402v-5.477l-1.403-.378V17.063L33 19.014Zm-10.515-7.352V33h-.948v-8.167l-.947-.265V11.663l.947-.663.948.663Zm-5.267 2.368V33h-.701v-9.513l-.72-.208v-8.262l1.421-.986Zm10.553 1.329V33h-1.175v-6.82l-1.194-.322V13.71l2.37 1.648Z">
+                        </path>
+                      </svg></div>
+                    <div class="margin-bottom _2em">
+                      <div class="body-small">LVNG is a new way of thinking about living, buying, and owning real
+                        estate, as well for renting purposes.</div>
+                    </div>
+                    <div class="footer_label"><a href="https://discord.gg/65B4TFfmNB" target="_blank"
+                        class="s2">Contact</a></div>
+                    <div class="margin-bottom _1em">
+                      <div><a href="https://discord.gg/65B4TFfmNB" target="_blank"
+                          class="text-size-h5 footer">Discord.gg</a></div>
+                    </div>
+                    <div class="margin-bottom _3em">
+                      <div class="footer_mail-wrapper">
+                        <div class="margin-right _1em">
+                          <div class="body-small">or write</div>
+                        </div>
+                        <div class="footer_mail-container"><a href="mailto:contact@lvng.io"
+                            class="home-link w-inline-block">
+                            <div>contact@lvng.io</div>
+                          </a></div>
+                      </div>
+                    </div>
+                    <div class="footer_socials"><a id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad8e-ed02ad73" href="#"
+                        target="_blank" class="social-link w-inline-block"><img
+                          src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63f34cf143a17b59531f2884_footer-social1.svg"
+                          loading="lazy" id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad8f-ed02ad73" alt=""
+                          class="footer_socials_img"></a><a id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad90-ed02ad73"
+                        href="#" class="social-link w-inline-block"><img
+                          src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63f34d17b366b72e3d59ae40_footer-social2.svg"
+                          loading="lazy" id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad91-ed02ad73" alt=""
+                          class="footer_socials_img"></a><a id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad92-ed02ad73"
+                        href="#" target="_blank" class="social-link w-inline-block"><img
+                          src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63f34d20885a7efd20a8773d_footer-social3.svg"
+                          loading="lazy" id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad93-ed02ad73" alt=""
+                          class="footer_socials_img"></a><a id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad94-ed02ad73"
+                        href="#" target="_blank" class="social-link w-inline-block"><img
+                          src="https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63f34d274fd5773a3b0d8a38_footer-social4.svg"
+                          loading="lazy" id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad95-ed02ad73" alt=""
+                          class="footer_socials_img"></a></div>
+                  </div>
+                </div>
+                <div id="w-node-_48d5211a-f094-899a-37cd-b58fed02ad96-ed02ad73" class="footer_nav">
+                  <div class="footer_label">
+                    <div class="s2">navigation</div>
+                  </div>
+                  <div class="margin-bottom _2em"><a href="/" class="text-size-h5 footer">Home</a></div>
+                  <div class="margin-bottom _2em"><a href="/partnership" class="text-size-h5 footer">Order</a></div><a
+                    href="/partnership" class="text-size-h5 footer">Partnership</a>
+                </div>
+                <div id="w-node-_48d5211a-f094-899a-37cd-b58fed02ada2-ed02ad73" class="footer_nav">
+                  <div class="footer_label">
+                    <div class="s2">Projects</div>
+                  </div>
+                  <div class="margin-bottom _2em"><a href="/alpha" aria-current="page"
+                      class="text-size-h5 footer w--current">Alpha</a></div>
+                  <div class="margin-bottom _2em">
+                    <div class="footer_not-available"><a href="#" class="text-size-h5 footer opacity-50">Eta</a>
+                      <div class="s2 is-8e8e8d">Coming soon</div>
+                    </div>
+                  </div>
+                  <div class="footer_not-available"><a href="#" class="text-size-h5 footer opacity-50">Theta</a>
+                    <div class="s2 is-8e8e8d">Coming soon</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_48d5211a-f094-899a-37cd-b58fed02adb4-ed02ad73" class="footer_down">
+            <div class="footer-container"><a href="#" class="footer_company w-inline-block">
+                <div class="footer_company-text">© 2023 LVNG S.A. / Sensonar sp. z o.o.</div>
+              </a><a href="/legal-regulations" class="footer_regulations w-inline-block">
+                <div class="footer_company-text">Legal regulations</div>
+              </a></div>
+          </div>
+        </footer>
+
+        <script>
+          function setThemeFromCookie() {
+              const themeState = document.getElementById('content');
+              themeState.className = isThemeSelected() ? 'dark-mode' : 'light-mode';
+          }
+
+          function setThemeSwitchState() {
+              document.getElementById('toggleTheme').checked = isThemeSelected();
+          }
+
+          function isThemeSelected() {
+              return document.cookie.match(/theme=dark/i) != null;
+          }
+
+          function toggleTheme() {
+              const themeState = document.getElementById('content');
+              const newState = themeState.className == 'dark-mode' ? 'light-mode' : 'dark-mode';
+              themeState.className = newState;
+              document.cookie = 'theme=' + (newState == 'light-mode' ? 'light' : 'dark');
+
+              // Update CSS variables to switch between dark and light mode
+              const root = document.documentElement;
+              if (newState == 'dark-mode') {
+                  root.style.setProperty('--background-color', '#1e1e1c');
+                  root.style.setProperty('--text-color', 'white');
+              } else {
+                  root.style.setProperty('--background-color', 'white');
+                  root.style.setProperty('--text-color', '#1e1e1c');
+              }
+          }
+
+          (function () {
+              setThemeFromCookie();
+              setThemeSwitchState();
+              document.getElementById('toggleTheme').onchange = toggleTheme;
+          })();
+      </script>
+
+      <style>
+          /* Common styling properties for both dark mode and light mode */
+         
+
+          :root {
+              --background-color: #1e1e1c;
+              --text-color: white;
+          }
+
+          
+
+          
+
+          /* Dark mode styles */
+          .dark-mode {
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+
+          /* Light mode styles */
+          .light-mode {
+              background-color: var(--background-color);
+              color: var(--text-color);
+          }
+      </style>
+
+      <script>
+
+
+          function checkforswitch() {
+              const themeState = document.getElementById('content');
+              const togText2 = document.getElementById('s2switch');
+              const togSVG2 = document.getElementById('togsvg');
+              if (themeState.className == 'dark-mode') {
+                  togText2.innerHTML = "Lights on";
+                  togSVG2.src = "https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/6423f42e0eddfefbd2d23145_Day.svg";
+              } else if (themeState.className == 'light-mode') {
+                  togText2.innerHTML = "Lights off";
+                  togSVG2.src = "https://uploads-ssl.webflow.com/63edd6d4291b030b472abf35/63ede9b3f7f0e7ff68848031_lvng-menu-moon.svg";
+              }
+          }
+      </script>
+
+      </main>
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
